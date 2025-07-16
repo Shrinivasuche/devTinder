@@ -1,5 +1,5 @@
 const express = require("express");
-
+require("./config/database");
 const app = express();
 
 app.use("/", (req, res) =>{
