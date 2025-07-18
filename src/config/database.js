@@ -10,10 +10,4 @@ const connectDB = async () =>{
     // password -> namastenode101
 };
 
-connectDB()
-    .then(()=>{
-        console.log("database connections established...");
-    })
-    .catch((err)=>{
-        console.log("database cannot be connected.");
-    });
+module.exports = connectDB;
